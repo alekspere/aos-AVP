@@ -2,9 +2,23 @@
 
 This branch builds the existing NOVA 6.6.5 release with an Android TV checkbox that increases the LFE contribution in FFmpeg stereo downmix from 0.5 to 1/sqrt(2), approximately 0.70710678 (+3.01 dB). It defaults off, requires forced stereo downmix with PCM output, and preserves the saved preference across upgrades. Passthrough and spatialization disable the effective boost.
 
-## Checkout
+## Git checkout over SSH
 
-Use the Android repo tool so every component comes from the selected manifest revision:
+The Git submodules are pinned to the same exact component commits as the build manifest:
+
+```sh
+git clone --recurse-submodules --branch lfe-stereo-downmix-v6.6.5 git@github.com:alekspere/aos-AVP.git
+cd aos-AVP
+git -C Video switch lfe-stereo-downmix-v6.6.5
+git -C MediaLib switch lfe-stereo-downmix-v6.6.5
+git -C native/avos switch lfe-stereo-downmix-v6.6.5-release
+```
+
+The parent and the three modified components use the personal forks; dependency repositories use explicit upstream SSH URLs. The native feature branch is also available for preparing the upstream PR. After updating the parent checkout, use `git submodule update --init --recursive` to restore its pinned component revisions.
+
+## Android repo checkout
+
+The Android repo tool is also supported:
 
 ```sh
 mkdir nova-lfe
@@ -14,7 +28,7 @@ repo sync -j4 -d
 repo manifest -r -o manifest-pinned.xml
 ```
 
-The branch's `default.xml` points to `lfe-v6.6.5.xml`. It pins Video, MediaLib and native/avos to exact commits in the personal forks. The other 35 dependency projects use the exact commits from the published 6.6.5 release manifest. The AVP build project follows this manifest branch; `repo manifest -r` records its resolved commit too. Keep the pinned revisions when syncing.
+The branch's `default.xml` points to `lfe-v6.6.5.xml`. It pins Video, MediaLib and native/avos to exact commits in the personal forks. The other 35 dependency projects use the exact commits from the published 6.6.5 release manifest. Two additional libdovi projects are pinned to the revisions used by the validated 6.6.5 build, because the release manifest omitted them despite the native build requiring them. The AVP build project follows this manifest branch; `repo manifest -r` records its resolved commit too. Keep the pinned revisions when syncing.
 
 ## Build
 

@@ -44,4 +44,6 @@
   <project name="torrentd-nobin" path="native/torrentd" revision="0a3e55d0e256725a8694c7fe3c23a8a927301152" upstream="refs/heads/master" dest-branch="master" />
   <project name="zlib-android-builder" path="native/zlib-android-builder" revision="d0d3cbaacb4b9e5695225afcd76d1a6d3b10c1a2" upstream="refs/heads/main" dest-branch="main" />
   <remote name="personal" fetch="https://github.com/alekspere" />
+  <project name="libdovi-android-builder" path="native/libdovi-android-builder" revision="0ec1e9d249941214d1b549a11faf156a15a98d35" upstream="refs/heads/main" dest-branch="main" />
+  <project name="prebuilt-libdovi" path="native/prebuilt/libdovi" revision="5ced583abb2f0889b28e708ac5752c25656a70eb" upstream="refs/heads/main" dest-branch="main" />
 </manifest>

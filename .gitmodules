@@ -1,84 +1,160 @@
-[submodule "Video"]
-	path = Video
-	url = ../aos-Video.git
-	branch = v6.4
-[submodule "MediaLib"]
-	path = MediaLib
-	url = ../aos-MediaLib.git
-	branch = v6.4
 [submodule "FileCoreLibrary"]
 	path = FileCoreLibrary
-	url = ../aos-FileCoreLibrary.git
-	branch = v6.4
-[submodule "native/avos"]
-	path = native/avos
-	url = ../aos-avos.git
-	branch = ffmpeg_n8_0
+	url = git@github.com:nova-video-player/aos-FileCoreLibrary.git
+	branch = v6.6
+[submodule "MediaLib"]
+	path = MediaLib
+	url = git@github.com:alekspere/aos-MediaLib.git
+	branch = lfe-stereo-downmix-v6.6.5
+[submodule "Video"]
+	path = Video
+	url = git@github.com:alekspere/aos-Video.git
+	branch = lfe-stereo-downmix-v6.6.5
 [submodule "native/audiocompress"]
 	path = native/audiocompress
-	url = ../aos-audiocompress.git
+	url = git@github.com:nova-video-player/aos-audiocompress.git
 	branch = master
-[submodule "native/ffmpeg-android-builder"]
-	path = native/ffmpeg-android-builder
-	url = ../ffmpeg-android-builder-nobin.git
-	branch = v8_0
-[submodule "native/dav1d-android-builder"]
-	path = native/dav1d-android-builder
-	url = ../dav1d-android-builder-nobin.git
-	branch = v1_4
-[submodule "native/opus-android-builder"]
-	path = native/opus-android-builder
-	url = ../opus-android-builder-nobin.git
-	branch = 20241012
-[submodule "native/libmysofa-android-builder"]
-	path = native/libmysofa-android-builder
-	url = ../libmysofa-android-builder.git
-	branch = main
-[submodule "native/openssl-android-builder"]
-	path = native/openssl-android-builder
-	url = ../openssl-android-builder-nobin.git
-	branch = v3_5_2
-[submodule "native/libyuv"]
-	path = native/libyuv
-	url = ../aos-libyuv.git
+[submodule "native/avos"]
+	path = native/avos
+	url = git@github.com:alekspere/aos-avos.git
+	branch = lfe-stereo-downmix-v6.6.5-release
+[submodule "native/boost"]
+	path = native/boost
+	url = git@github.com:nova-video-player/aos-boost-android-builder.git
 	branch = master
 [submodule "native/libnativehelper"]
 	path = native/libnativehelper
-	url = ../aos-libnativehelper.git
-	branch = master
-[submodule "native/boost"]
-	path = native/boost
-	url = ../aos-boost-android-builder.git
+	url = git@github.com:nova-video-player/aos-libnativehelper.git
 	branch = master
 [submodule "native/libtorrent-android-builder"]
 	path = native/libtorrent-android-builder
-	url = ../aos-libtorrent-android-builder.git
+	url = git@github.com:nova-video-player/aos-libtorrent-android-builder.git
+	branch = main
+[submodule "native/dav1d-android-builder"]
+	path = native/dav1d-android-builder
+	url = git@github.com:nova-video-player/dav1d-android-builder-nobin.git
+	branch = v1_5
+[submodule "native/ffmpeg-android-builder"]
+	path = native/ffmpeg-android-builder
+	url = git@github.com:nova-video-player/ffmpeg-android-builder-nobin.git
+	branch = v9_0
+[submodule "native/fontconfig-android-builder"]
+	path = native/fontconfig-android-builder
+	url = git@github.com:nova-video-player/fontconfig-android-builder.git
+	branch = main
+[submodule "native/harfbuzz-android-builder"]
+	path = native/harfbuzz-android-builder
+	url = git@github.com:nova-video-player/harfbuzz-android-builder.git
+	branch = main
+[submodule "native/libass-android-builder"]
+	path = native/libass-android-builder
+	url = git@github.com:nova-video-player/libass-android-builder.git
+	branch = main
+[submodule "native/libfreetype-android-builder"]
+	path = native/libfreetype-android-builder
+	url = git@github.com:nova-video-player/libfreetype-android-builder.git
+	branch = main
+[submodule "native/libfribidi-android-builder"]
+	path = native/libfribidi-android-builder
+	url = git@github.com:nova-video-player/libfribidi-android-builder.git
+	branch = main
+[submodule "native/libmysofa-android-builder"]
+	path = native/libmysofa-android-builder
+	url = git@github.com:nova-video-player/libmysofa-android-builder.git
+	branch = main
+[submodule "native/libpng-android-builder"]
+	path = native/libpng-android-builder
+	url = git@github.com:nova-video-player/libpng-android-builder.git
+	branch = main
+[submodule "native/libunibreak-android-builder"]
+	path = native/libunibreak-android-builder
+	url = git@github.com:nova-video-player/libunibreak-android-builder.git
+	branch = main
+[submodule "native/libxml2-android-builder"]
+	path = native/libxml2-android-builder
+	url = git@github.com:nova-video-player/libxml2-android-builder.git
+	branch = main
+[submodule "native/openssl-android-builder"]
+	path = native/openssl-android-builder
+	url = git@github.com:nova-video-player/openssl-android-builder-nobin.git
+	branch = v4_1
+[submodule "native/opus-android-builder"]
+	path = native/opus-android-builder
+	url = git@github.com:nova-video-player/opus-android-builder-nobin.git
+	branch = 20241012
+[submodule "native/prebuilt/dav1d"]
+	path = native/prebuilt/dav1d
+	url = git@github.com:nova-video-player/prebuilt-dav1d.git
+	branch = v1_5
+[submodule "native/prebuilt/ffmpeg"]
+	path = native/prebuilt/ffmpeg
+	url = git@github.com:nova-video-player/prebuilt-ffmpeg.git
+	branch = v9_0
+[submodule "native/prebuilt/fontconfig"]
+	path = native/prebuilt/fontconfig
+	url = git@github.com:nova-video-player/prebuilt-fontconfig.git
+	branch = main
+[submodule "native/prebuilt/freetype"]
+	path = native/prebuilt/freetype
+	url = git@github.com:nova-video-player/prebuilt-freetype.git
+	branch = main
+[submodule "native/prebuilt/fribidi"]
+	path = native/prebuilt/fribidi
+	url = git@github.com:nova-video-player/prebuilt-fribidi.git
+	branch = main
+[submodule "native/prebuilt/harfbuzz"]
+	path = native/prebuilt/harfbuzz
+	url = git@github.com:nova-video-player/prebuilt-harfbuzz.git
+	branch = main
+[submodule "native/prebuilt/libass"]
+	path = native/prebuilt/libass
+	url = git@github.com:nova-video-player/prebuilt-libass.git
+	branch = main
+[submodule "native/prebuilt/libmysofa"]
+	path = native/prebuilt/libmysofa
+	url = git@github.com:nova-video-player/prebuilt-libmysofa.git
+	branch = v1_3
+[submodule "native/prebuilt/libpng"]
+	path = native/prebuilt/libpng
+	url = git@github.com:nova-video-player/prebuilt-libpng.git
+	branch = main
+[submodule "native/prebuilt/libunibreak"]
+	path = native/prebuilt/libunibreak
+	url = git@github.com:nova-video-player/prebuilt-libunibreak.git
+	branch = main
+[submodule "native/prebuilt/libxml2"]
+	path = native/prebuilt/libxml2
+	url = git@github.com:nova-video-player/prebuilt-libxml2.git
+	branch = main
+[submodule "native/prebuilt/openssl"]
+	path = native/prebuilt/openssl
+	url = git@github.com:nova-video-player/prebuilt-openssl.git
+	branch = v4_1
+[submodule "native/prebuilt/opus"]
+	path = native/prebuilt/opus
+	url = git@github.com:nova-video-player/prebuilt-opus.git
+	branch = main
+[submodule "native/prebuilt/torrentd"]
+	path = native/prebuilt/torrentd
+	url = git@github.com:nova-video-player/prebuilt-torrentd.git
+	branch = main
+[submodule "native/prebuilt/zlib"]
+	path = native/prebuilt/zlib
+	url = git@github.com:nova-video-player/prebuilt-zlib.git
 	branch = main
 [submodule "native/torrentd"]
 	path = native/torrentd
-	url = ../torrentd-nobin.git
+	url = git@github.com:nova-video-player/torrentd-nobin.git
 	branch = master
-[submodule "native/prebuilt/ffmpeg"]
-	path = native/prebuilt/ffmpeg
-	url = ../prebuilt-ffmpeg.git
-	branch = v8_0
-[submodule "native/prebuilt/opus"]
-	path = native/prebuilt/opus
-	url = ../prebuilt-opus.git
+[submodule "native/zlib-android-builder"]
+	path = native/zlib-android-builder
+	url = git@github.com:nova-video-player/zlib-android-builder.git
 	branch = main
-[submodule "native/prebuilt/dav1d"]
-	path = native/prebuilt/dav1d
-	url = ../prebuilt-dav1d.git
-	branch = v1_5
-[submodule "native/prebuilt/openssl"]
-	path = native/prebuilt/openssl
-	url = ../prebuilt-openssl.git
-	branch = v3_5
-[submodule "native/prebuilt/libmysofa"]
-	path = native/prebuilt/libmysofa
-	url = ../prebuilt-libmysofa.git
-	branch = v1_3
-[submodule "native/prebuilt/torrentd"]
-	path = native/prebuilt/torrentd
-	url = ../prebuilt-torrentd.git
+[submodule "native/libdovi-android-builder"]
+	path = native/libdovi-android-builder
+	url = git@github.com:nova-video-player/libdovi-android-builder.git
+	branch = main
+[submodule "native/prebuilt/libdovi"]
+	path = native/prebuilt/libdovi
+	url = git@github.com:nova-video-player/prebuilt-libdovi.git
 	branch = main

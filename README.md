@@ -1,3 +1,5 @@
+> This branch adds an optional +3 dB LFE gain to FFmpeg stereo downmix. See [the LFE build guide](README-LFE.md) for pinned source revisions and build instructions.
+
 # NOVA: opeN sOurce Video plAyer
 
 [![GitHub release](https://img.shields.io/github/v/release/nova-video-player/aos-AVP.svg?logo=github&label=GitHub&cacheSeconds=3600)](https://github.com/moneytoo/Player/releases/latest)
@@ -41,9 +43,8 @@ For the full list, please look at this manifest https://github.com/nova-video-pl
 Get the [repo tool](https://source.android.com/source/downloading), then type:
 ```
 mkdir aos; cd aos
-repo init -u https://github.com/nova-video-player/aos-AVP -b nova
-repo sync -j4
-repo forall -c 'git checkout -t $REPO_REMOTE/$REPO_RREV'
+repo init -u https://github.com/alekspere/aos-AVP -b lfe-stereo-downmix-v6.6.5
+repo sync -j4 -d
 make
 ```
 
